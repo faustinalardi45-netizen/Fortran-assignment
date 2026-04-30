@@ -12,14 +12,15 @@ d(7)=55
 d(8)=88
 d(9)=61
 d(10)=47
-if(d>=80) then print*,'Distinction' 
-else if (d>=60)
- print*,'credit'
+do i= 1,10
+if(d(i)>=80) then 
+print*, i, d(i), 'Distinction' 
+else if (d(i)>=60)
+print*, i, d(i), 'credit'
 else if (d>=40) then 
-print*,'pass'
-else if (d>=39) then print*,'fail'
+print*, i, d(i), 'pass'
+else 
+print*, i, d(i), 'fail'
 end if
-do i =1,10
-read*, d(i)
 end do
 end program results
